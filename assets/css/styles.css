@@ -606,14 +606,14 @@ input {
 }
 
 /* Portfolio styles */
-.portfolio-filter {
+.portfolio__group {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
 }
 
-.filter__button {
+.portfolio__button {
   padding: 6px 22px;
 
   font-weight: 500;
@@ -631,42 +631,44 @@ input {
     box-shadow var(--animation-timing-function);
 }
 
-.filter__button:hover,
-.filter__button:focus {
+.portfolio__button:hover,
+.portfolio__button:focus {
   color: var(--basic-white-color);
   background-color: var(--basic-blue-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  box-shadow:
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-cards {
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.cards-link {
+.cards__link {
   display: block;
 
   transition: box-shadow var(--animation-timing-function);
 }
 
-.cards-link:hover,
-.cards-link:focus {
+.cards__link:hover,
+.cards__link:focus {
   box-shadow:
     0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cards-thumb {
+.cards__thumb {
   position: relative;
   overflow: hidden;
   max-width: 370px;
   max-height: 294px;
 }
 
-.cards-overlay {
+.cards__overlay {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -681,24 +683,24 @@ input {
   will-change: transform;
 }
 
-.cards-link:hover .cards-overlay {
+.cards__link:hover .cards__overlay {
   transform: translateY(0);
 }
 
-.cards-overlay-text {
+.cards__text {
   font-size: 18px;
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: var(--basic-white-color);
 }
 
-.cards-content {
+.cards__content {
   padding: 20px 24px;
   border: 1px solid var(--alternative-white-color);
   border-top: none;
 }
 
-.cards-title {
+.cards__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -708,7 +710,7 @@ input {
   color: var(--basic-black-color);
 }
 
-.cards-text {
+.cards__desc {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
@@ -761,7 +763,7 @@ input {
   will-change: transform;
 }
 
-.modal-close-button {
+.modal__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -781,18 +783,23 @@ input {
   transition: fill var(--animation-timing-function);
 }
 
-.modal-close-button:hover {
+.modal__close-button:hover {
   fill: var(--basic-blue-color);
 }
 
+.modal__icon {
+  width: 18px;
+  height: 18;
+}
+
 /* modal registration form styles */
-.registration-form {
+.feedback__form {
   padding: 40px;
   width: 100%;
   height: 100%;
 }
 
-.registration-title {
+.feedback__title {
   display: block;
   margin-bottom: 12px;
 
@@ -804,7 +811,7 @@ input {
   color: var(--basic-black-color);
 }
 
-.registration-label {
+.feedback__label {
   display: block;
   margin-bottom: 4px;
 
@@ -814,12 +821,12 @@ input {
   color: var(--basic-grey-color);
 }
 
-.registration-field {
+.feedback__field {
   position: relative;
   margin-bottom: 10px;
 }
 
-.registration-input {
+.feedback__input {
   padding: 12px 42px;
   width: 100%;
 
@@ -834,11 +841,11 @@ input {
 }
 
 
-.registration-input:focus {
+.feedback__input:focus {
   border-color: var(--basic-blue-color);
 }
 
-.registration-input::placeholder {
+.feedback__input::placeholder {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--comment-grey-color);
@@ -847,14 +854,16 @@ input {
   transition: opacity var(--animation-timing-function);
 }
 
-.registration-input:focus::placeholder {
+.feedback__input:focus::placeholder {
   opacity: 1;
 }
 
-.input-icon {
+.feedback__icon {
   position: absolute;
   top: 50%;
   left: 12px;
+  width: 18px;
+  height: 18px;
 
   pointer-events: none;
   transform: translateY(-50%);
@@ -863,46 +872,53 @@ input {
   transition: fill var(--animation-timing-function);
 }
 
-.registration-input:focus+.input-icon {
+.feedback__input:focus+.feedback__icon {
   fill: var(--basic-blue-color);
 }
 
-.input-icon-alert {
+.feedback__icon-alert {
   position: absolute;
   top: 50%;
   right: 12px;
+  width: 18px;
+  height: 18px;
   transform: translateY(-50%);
 }
 
-.input-icon-success,
-.input-icon-warning {
+.feedback__icon-success,
+.feedback__icon-warning {
   opacity: 0;
   transform: scale(0.3);
   transform-origin: center;
   transition: opacity 150ms ease-in, transform 150ms ease-in;
 }
 
-.input-icon-success {
+.feedback__icon-success {
+  width: 18px;
+  height: 18px;
 
   fill: rgb(74, 191, 10);
 }
 
-.registration-input:not(:placeholder-shown):required:valid~.input-icon-alert .input-icon-success {
+.feedback__input:not(:placeholder-shown):required:valid~.feedback__icon-alert .feedback__icon-success {
   opacity: 1;
   transform: scale(1);
 }
 
-.input-icon-warning {
+.feedback__icon-warning {
+  width: 18px;
+  height: 18px;
+
   fill: rgb(244, 209, 12);
 }
 
 
-.registration-input:not(:placeholder-shown):required:invalid~.input-icon-alert .input-icon-warning {
+.feedback__input:not(:placeholder-shown):required:invalid~.feedback__icon-alert .feedback__icon-warning {
   opacity: 1;
   transform: scale(1);
 }
 
-.registration-comment {
+.feedback__comment {
   margin-bottom: 20px;
   padding: 12px 16px;
   min-height: 120px;
@@ -910,7 +926,7 @@ input {
   resize: none;
 }
 
-.registration-comment::placeholder {
+.feedback__comment::placeholder {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -919,7 +935,7 @@ input {
   opacity: 1;
 }
 
-.form-checkbox {
+.checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -929,31 +945,36 @@ input {
   user-select: none;
 }
 
-.icon-unchecked {
+.checkbox__icon {
+  width: 16px;
+  height: 15px;
+}
+
+.icon--unchecked {
   opacity: 1;
   transition: 300ms;
 }
 
-.icon-checked {
+.icon--checked {
   opacity: 0;
   transition: 300ms;
 }
 
-.checkbox:checked+.registration-icon .icon-checked {
+.checkbox__input:checked+.checkbox__icon .icon--checked {
   opacity: 1;
 }
 
-.checkbox:checked+.registration-icon .icon-unchecked {
+.checkbox__input:checked+.checkbox__icon .icon--unchecked {
   opacity: 0;
 }
 
-.registration-link {
+.feedback__link {
   text-decoration: underline;
   color: var(--basic-blue-color);
   text-underline-position: under;
 }
 
-.registration__button {
+.feedback__button {
   display: block;
   margin: 0 auto;
   padding: 10px 52px;
@@ -961,7 +982,7 @@ input {
   transition: background-color var(--animation-timing-function);
 }
 
-.registration__button:hover,
-.registration__button:focus {
+.feedback__button:hover,
+.feedback__button:focus {
   background-color: var(--secondary-blue-color);
 }

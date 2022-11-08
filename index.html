@@ -486,23 +486,23 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
-          class="modal-close-button"
+          class="modal__close-button"
           type="button"
           aria-label="Кнопка закриття"
           data-modal-close
         >
-          <svg class="modal-icon" width="18" height="18">
+          <svg class="modal__icon">
             <use href="./assets/images/svg/icons.svg#icon-close"></use>
           </svg>
         </button>
         <!-- registration form -->
-        <form name="registration-form">
-          <strong class="registration-title">Залиште свої дані, ми вам передзвонимо</strong>
+        <form name="feedback__form">
+          <strong class="feedback__title">Залиште свої дані, ми вам передзвонимо</strong>
 
-          <label class="registration-label" for="user_name">Ім'я</label>
-          <div class="registration-field">
+          <label class="feedback__appeal" for="user_name">Ім'я</label>
+          <div class="feedback__field">
             <input
-              class="registration-input"
+              class="feedback__input"
               type="text"
               name="user_name"
               id="user_name"
@@ -510,25 +510,25 @@
               required
               minlength="3"
             />
-            <svg class="input-icon" width="18" height="18">
+            <svg class="feedback__icon">
               <use href="./assets/images/svg/icons.svg#icon-person-black"></use>
             </svg>
-            <svg class="input-icon-alert" width="18" height="18">
+            <svg class="feedback__icon-alert">
               <use
-                class="input-icon-success"
+                class="feedback__icon-success"
                 href="./assets/images/svg/icons.svg#icon-success"
               ></use>
               <use
-                class="input-icon-warning"
+                class="feedback__icon-warning"
                 href="./assets/images/svg/icons.svg#icon-warning"
               ></use>
             </svg>
           </div>
 
-          <label class="registration-label" for="user_tel">Телефон</label>
-          <div class="registration-field">
+          <label class="feedback__label" for="user_tel">Телефон</label>
+          <div class="feedback__field">
             <input
-              class="registration-input"
+              class="feedback__input"
               type="tel"
               name="user_tel"
               id="user_tel"
@@ -537,64 +537,70 @@
               minlength="6"
               maxlength="15"
             />
-            <svg class="input-icon" width="18" height="18">
+            <svg class="feedback__icon">
               <use href="./assets/images/svg/icons.svg#icon-phone-black"></use>
             </svg>
-            <svg class="input-icon-alert" width="18" height="18">
+            <svg class="feedback__icon-alert">
               <use
-                class="input-icon-success"
+                class="feedback__icon-success"
                 href="./assets/images/svg/icons.svg#icon-success"
               ></use>
               <use
-                class="input-icon-warning"
+                class="feedback__icon-warning"
                 href="./assets/images/svg/icons.svg#icon-warning"
               ></use>
             </svg>
           </div>
 
-          <label class="registration-label" for="user_mail">Пошта</label>
-          <div class="registration-field">
+          <label class="feedback__label" for="user_mail">Пошта</label>
+          <div class="feedback__field">
             <input
-              class="registration-input"
+              class="feedback__input"
               type="email"
               name="user_mail"
               id="user_mail"
               placeholder="example@mail.com"
               required
             />
-            <svg class="input-icon" width="18" height="18">
+            <svg class="feedback__icon">
               <use href="./assets/images/svg/icons.svg#icon-email-black"></use>
             </svg>
-            <svg class="input-icon-alert" width="18" height="18">
+            <svg class="feedback__icon-alert">
               <use
-                class="input-icon-success"
+                class="feedback__icon-success"
                 href="./assets/images/svg/icons.svg#icon-success"
               ></use>
               <use
-                class="input-icon-warning"
+                class="feedback__icon-warning"
                 href="./assets/images/svg/icons.svg#icon-warning"
               ></use>
             </svg>
           </div>
 
-          <label class="registration-label" for="user_comment">Коментар</label>
+          <label class="feedback__label" for="user_comment">Коментар</label>
           <textarea
-            class="registration-input registration-comment"
+            class="feedback__input feedback__comment"
             placeholder="Введіть текст"
             name="user_comment"
             id="user_comment"
           ></textarea>
 
-          <label class="form-checkbox">
-            <input class="checkbox visually-hidden" type="checkbox" name="registration_checkbox" />
-            <svg class="registration-icon" width="16" height="15">
-              <use class="icon-unchecked" href="./assets/images/svg/icons.svg#icon-check1"></use>
-              <use class="icon-checked" href="./assets/images/svg/icons.svg#icon-check2"></use>
+          <label class="checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" name="checkbox" />
+            <svg class="checkbox__icon">
+              <use
+                class="checkbox__icon icon--unchecked"
+                href="./assets/images/svg/icons.svg#icon-check1"
+              ></use>
+              <use
+                class="checkbox__icon icon--checked"
+                href="./assets/images/svg/icons.svg#icon-check2"
+              ></use>
             </svg>
             Погоджуюся з розсилкою та приймаю
-            <a class="registration-link" href="#">Умови договору</a>
+            <a class="feedback__link" href="#">Умови договору</a>
           </label>
-          <button class="registration__button basic__button" type="submit">Відправити</button>
+          <button class="feedback__button basic__button" type="submit">Відправити</button>
         </form>
       </div>
     </div>

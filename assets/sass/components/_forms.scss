@@ -1,0 +1,215 @@
+// forms styles
+// subscribe form
+.subscribe__appeal {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--basic-white-color);
+}
+
+.subscribe__field {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.subscribe__input {
+    padding: 15px 16px;
+    width: 358px;
+
+    border: 1px solid var(--form-border-grey-color);
+    filter: drop-shadow(0px 4px 4px var(--shadow-grey-color));
+    border-radius: 4px;
+    background-color: inherit;
+    color: var(--link-grey-color);
+}
+
+.subscribe__input::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+}
+
+.subscribe__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 28px;
+    gap: 10px;
+}
+
+.subscribe__button::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/png/icon-send.png);
+    color: var(--basic-white-color);
+}
+
+// feedback form
+.feedback {
+    width: 100%;
+    height: 100%;
+}
+
+.feedback__appeal {
+    display: block;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--basic-black-color);
+}
+
+.feedback__label {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--basic-grey-color);
+}
+
+.feedback__field {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.feedback__input {
+    padding: 12px 42px;
+    width: 100%;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+
+    transition: border-color var(--animation-timing-function);
+}
+
+
+.feedback__input:focus {
+    border-color: var(--basic-blue-color);
+}
+
+.feedback__input::placeholder {
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--comment-grey-color);
+
+    opacity: 0;
+    transition: opacity var(--animation-timing-function);
+}
+
+.feedback__input:focus::placeholder {
+    opacity: 1;
+}
+
+.feedback__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+
+    pointer-events: none;
+    transform: translateY(-50%);
+    fill: var(--basic-black-color);
+
+    transition: fill var(--animation-timing-function);
+}
+
+.feedback__input:focus+.feedback__icon {
+    fill: var(--basic-blue-color);
+}
+
+.feedback__icon-alert {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+}
+
+.feedback__icon-success,
+.feedback__icon-warning {
+    opacity: 0;
+    transform: scale(0.3);
+    transform-origin: center;
+    transition: opacity 150ms ease-in, transform 150ms ease-in;
+}
+
+.feedback__icon-success {
+    width: 18px;
+    height: 18px;
+
+    fill: rgb(74, 191, 10);
+}
+
+.feedback__input:not(:placeholder-shown):required:valid~.feedback__icon-alert .feedback__icon-success {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.feedback__icon-warning {
+    width: 18px;
+    height: 18px;
+
+    fill: rgb(244, 209, 12);
+}
+
+
+.feedback__input:not(:placeholder-shown):required:invalid~.feedback__icon-alert .feedback__icon-warning {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.feedback__comment {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    min-height: 120px;
+
+    resize: none;
+}
+
+.feedback__comment::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--icon-gray-color);
+
+    opacity: 1;
+}
+
+.feedback__link {
+    text-decoration: underline;
+    color: var(--basic-blue-color);
+    text-underline-position: under;
+}
+
+.feedback__button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 52px;
+
+    transition: background-color var(--animation-timing-function);
+}
+
+.feedback__button:hover,
+.feedback__button:focus {
+    background-color: var(--secondary-blue-color);
+}

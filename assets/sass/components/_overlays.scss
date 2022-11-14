@@ -1,0 +1,39 @@
+// overlays styles
+.info-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.info-overlay__text {
+    padding: 27px 0;
+
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white-color);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--overlay-blue-color);
+
+    transform: translateY(101%);
+    transition: transform var(--animation-timing-function);
+    will-change: transform;
+}
+
+.cards__link:hover .overlay {
+    transform: translateY(0);
+}

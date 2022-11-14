@@ -1,0 +1,51 @@
+// footer styles
+.footer {
+    padding: 60px 0;
+
+    background-color: var(--secondary-black-color);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__address {
+    font-style: normal;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer__link {
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--link-grey-color);
+
+    transition: color var(--animation-timing-function);
+}
+
+.footer__link--map {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--basic-white-color);
+}
+
+.footer__link:hover,
+.footer__link:focus {
+    color: var(--basic-blue-color);
+}
+
+.footer__socials {
+    margin-right: auto;
+}

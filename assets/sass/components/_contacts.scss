@@ -1,0 +1,32 @@
+// contacts styles
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--basic-grey-color);
+    fill: currentColor;
+
+    transition:
+        color var(--animation-timing-function),
+        fill var(--animation-timing-function);
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+    color: var(--basic-blue-color);
+    fill: var(--basic-blue-color);
+}
+
+.contacts__label {
+    margin-left: 10px;
+    color: currentColor;
+}

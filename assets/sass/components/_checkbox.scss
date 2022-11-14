@@ -1,0 +1,33 @@
+// checkbox styles
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 7px;
+
+    user-select: none;
+}
+
+.checkbox__icon {
+    width: 16px;
+    height: 15px;
+}
+
+.icon--unchecked {
+    opacity: 1;
+    transition: 300ms;
+}
+
+.icon--checked {
+    opacity: 0;
+    transition: 300ms;
+}
+
+.checkbox__input:checked+.checkbox__icon .icon--checked {
+    opacity: 1;
+}
+
+.checkbox__input:checked+.checkbox__icon .icon--unchecked {
+    opacity: 0;
+}

@@ -37,3 +37,10 @@
 .cards__link:hover .overlay {
     transform: translateY(0);
 }
+
+.overlay__text {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    color: var(--basic-white-color);
+}

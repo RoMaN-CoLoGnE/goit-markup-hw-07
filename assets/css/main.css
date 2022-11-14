@@ -359,6 +359,16 @@ input {
   margin-right: auto;
 }
 
+.footer__appeal {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--basic-white-color);
+}
+
 .portfolio__group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,16 +513,6 @@ input {
   fill: currentColor;
 }
 
-.socials__appeal {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--basic-white-color);
-}
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,6 +647,13 @@ input {
 .cards__link:hover .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.overlay__text {
+  font-size: 18px;
+  line-height: 1.5555555556;
+  letter-spacing: 0.03em;
+  color: var(--basic-white-color);
 }
 
 .subscribe__appeal {
@@ -1035,13 +1042,6 @@ input {
   overflow: hidden;
   max-width: 370px;
   max-height: 294px;
-}
-
-.cards__text {
-  font-size: 18px;
-  line-height: 1.5555555556;
-  letter-spacing: 0.03em;
-  color: var(--basic-white-color);
 }
 
 .cards__content {

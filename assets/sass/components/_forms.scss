@@ -36,10 +36,6 @@
 }
 
 .subscribe__button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 28px;
     gap: 10px;
 }
 
@@ -204,7 +200,6 @@
 .feedback__button {
     display: block;
     margin: 0 auto;
-    padding: 10px 52px;
 
     transition: background-color var(--animation-timing-function);
 }

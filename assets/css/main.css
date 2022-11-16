@@ -119,22 +119,6 @@ input {
   color: var(--basic-white-color);
 }
 
-.hero__button {
-  margin-top: 30px;
-  padding: 10px 32px;
-  -webkit-transition: background-color var(--animation-timing-function), -webkit-box-shadow var(--animation-timing-function);
-  transition: background-color var(--animation-timing-function), -webkit-box-shadow var(--animation-timing-function);
-  transition: background-color var(--animation-timing-function), box-shadow var(--animation-timing-function);
-  transition: background-color var(--animation-timing-function), box-shadow var(--animation-timing-function), -webkit-box-shadow var(--animation-timing-function);
-}
-
-.hero__button:hover,
-.hero__button:focus {
-  background-color: var(--secondary-blue-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
 .features {
   padding-top: 94px;
 }
@@ -419,6 +403,19 @@ input {
 }
 
 .button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 216px;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -430,6 +427,22 @@ input {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.hero__button {
+  min-width: 216px;
+  margin-top: 30px;
+  -webkit-transition: background-color var(--animation-timing-function), -webkit-box-shadow var(--animation-timing-function);
+  transition: background-color var(--animation-timing-function), -webkit-box-shadow var(--animation-timing-function);
+  transition: background-color var(--animation-timing-function), box-shadow var(--animation-timing-function);
+  transition: background-color var(--animation-timing-function), box-shadow var(--animation-timing-function), -webkit-box-shadow var(--animation-timing-function);
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: var(--secondary-blue-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio__button {
@@ -719,16 +732,6 @@ input {
 }
 
 .subscribe__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px 28px;
   gap: 10px;
 }
 
@@ -994,7 +997,6 @@ input {
 .feedback__button {
   display: block;
   margin: 0 auto;
-  padding: 10px 52px;
   -webkit-transition: background-color var(--animation-timing-function);
   transition: background-color var(--animation-timing-function);
 }

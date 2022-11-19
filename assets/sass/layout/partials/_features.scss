@@ -1,6 +1,10 @@
 // features styles
 .features {
-  padding-top: 94px;
+  @include section-indent($pb: 0);
+
+  &__container {
+    @extend %container;
+  }
 
   &__list {
     display: flex;
@@ -12,10 +16,10 @@
   }
 
   &__wrapper {
+    @include flex-center();
+
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     height: 120px;
     background: $secondary-grey;
     border-radius: 4px;

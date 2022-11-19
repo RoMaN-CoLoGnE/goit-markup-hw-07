@@ -1,0 +1,23 @@
+// section ident mixin
+@mixin section-indent($pt: 94px, $pb: $pt) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+// $Param [Number] - set vertical indent for sections
+// usage:
+// .section {
+//   @include section-indent(120px);
+// }
+// output:
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+@mixin flex-center($ai: center, $jc: center, $indent: null) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $indent;
+}

@@ -5,6 +5,8 @@
   background-color: $secondary-black;
 
   &__container {
+    @extend %container;
+
     display: flex;
     align-items: baseline;
     gap: 70px;

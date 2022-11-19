@@ -22,27 +22,3 @@
     height: 18;
   }
 }
-
-.modal__close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-
-  background-color: unset;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-
-  transition: fill $animation-timing-function;
-
-  &:hover {
-    fill: $basic-blue;
-  }
-}

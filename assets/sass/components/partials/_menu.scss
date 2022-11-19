@@ -1,8 +1,6 @@
 // menu styles
 .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-center($jc: space-between);
 
   &__logo {
     margin-right: 90px;

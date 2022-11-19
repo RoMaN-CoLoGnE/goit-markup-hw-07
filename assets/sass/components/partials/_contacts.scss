@@ -1,8 +1,6 @@
 // contacts styles
 .contacts {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  @include flex-center($jc: null, $indent: 50px);
 }
 
 .contacts__link {

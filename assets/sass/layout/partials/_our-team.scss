@@ -1,6 +1,16 @@
 // our team styles
 .our-team {
+  @include section-indent;
+
   background-color: $secondary-grey;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    @extend %section-title;
+  }
 
   &__list {
     display: flex;

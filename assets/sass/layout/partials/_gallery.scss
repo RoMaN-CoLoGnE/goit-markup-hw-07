@@ -1,0 +1,23 @@
+// gallery styles
+.gallery {
+  @include section-indent;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    @extend %section-title;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}

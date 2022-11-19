@@ -10,14 +10,14 @@
 
     transition: opacity 150ms linear, visibility 150ms linear;
     will-change: opacity;
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -60%);
+    &.is-hidden .modal {
+        transform: translate(-50%, -60%);
+    }
 }

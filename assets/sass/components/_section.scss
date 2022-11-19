@@ -1,9 +1,8 @@
 // section styles
 .section {
-    padding: 94px 0;
-}
+  padding: 94px 0;
 
-.section__title {
+  &__title {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -11,5 +10,6 @@
     line-height: calc(42 / 36);
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--basic-black-color);
+    color: $basic-black;
+  }
 }

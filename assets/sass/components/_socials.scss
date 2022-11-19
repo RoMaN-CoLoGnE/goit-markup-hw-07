@@ -1,44 +1,43 @@
 // socials styles
 .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
-.socials__item {
+  &__item {
     width: 44px;
     height: 44px;
-}
+  }
 
-.socials__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-
-    border-radius: 50%;
-    background-color: var(--basic-white-color);
-    color: var(--icon-gray-color);
-
-    transition: background-color var(--animation-timing-function),
-        color var(--animation-timing-function);
-}
-
-.socials__link:hover,
-.socials__link:focus {
-    background-color: var(--basic-blue-color);
-    color: var(--basic-white-color);
-}
-
-.socials__link--secondary {
-    color: var(--basic-white-color);
-    background-color: var(--social-grey-color);
-}
-
-.socials__icon {
+  &__icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
+  }
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  background-color: $basic-white;
+  color: $icon-gray;
+
+  transition: background-color $animation-timing-function, color $animation-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-blue;
+    color: $basic-white;
+  }
+
+  &--secondary {
+    color: $basic-white;
+    background-color: $social-grey;
+  }
 }

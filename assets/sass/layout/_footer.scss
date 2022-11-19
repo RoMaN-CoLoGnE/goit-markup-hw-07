@@ -1,56 +1,35 @@
 // footer styles
 .footer {
-    padding: 60px 0;
+  padding: 60px 0;
 
-    background-color: var(--secondary-black-color);
-}
+  background-color: $secondary-black;
 
-.footer__container {
+  &__container {
     display: flex;
     align-items: baseline;
     gap: 70px;
-}
+  }
 
-.footer__logo {
+  &__logo {
     display: block;
     margin-bottom: 20px;
-}
+  }
 
-.footer__address {
+  &__address {
     font-style: normal;
-}
+  }
 
-.footer__list {
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 9px;
-}
+  }
 
-.footer__link {
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--link-grey-color);
-
-    transition: color var(--animation-timing-function);
-}
-
-.footer__link--map {
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--basic-white-color);
-}
-
-.footer__link:hover,
-.footer__link:focus {
-    color: var(--basic-blue-color);
-}
-
-.footer__socials {
+  &__socials {
     margin-right: auto;
-}
+  }
 
-.footer__appeal {
+  &__appeal {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -58,5 +37,26 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--basic-white-color);
+    color: $basic-white;
+  }
+}
+// TODO Можно вложить в .footer???
+.footer__link {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: $link-grey;
+
+  transition: color $animation-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $basic-blue;
+  }
+
+  &--map {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: $basic-white;
+  }
 }

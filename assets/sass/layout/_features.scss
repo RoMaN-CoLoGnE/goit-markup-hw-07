@@ -1,45 +1,45 @@
 // features styles
 .features {
-    padding-top: 94px;
-}
+  padding-top: 94px;
 
-.features__list {
+  &__list {
     display: flex;
     gap: 30px;
-}
+  }
 
-.features__item {
+  &__item {
     flex-basis: calc((100% - 90px) / 4);
-}
+  }
 
-.features__wrapper {
+  &__wrapper {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120px;
-    background: var(--secondary-grey-color);
+    background: $secondary-grey;
     border-radius: 4px;
     margin-bottom: 30px;
-}
+  }
 
-.features__icon {
+  &__icon {
     width: 70px;
     height: 70px;
-}
+  }
 
-.features__subtitle {
+  &__subtitle {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--basic-black-color);
-}
+    color: $basic-black;
+  }
 
-.features__text {
+  &__text {
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    color: var(--basic-grey-color);
+    color: $basic-grey;
+  }
 }

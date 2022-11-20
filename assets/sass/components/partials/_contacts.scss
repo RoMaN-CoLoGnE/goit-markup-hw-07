@@ -4,8 +4,7 @@
 }
 
 .contacts__link {
-  display: flex;
-  align-items: center;
+  @include flex-center($jc: null, $indent: 10px);
 
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -23,6 +22,5 @@
 }
 
 .contacts__label {
-  margin-left: 10px;
   color: currentColor;
 }

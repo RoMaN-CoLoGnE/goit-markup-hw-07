@@ -11,13 +11,12 @@
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    @include grid();
   }
 
   &__item {
     position: relative;
 
-    flex-basis: calc((100% - 60px) / 3);
+    @include grid-item(3);
   }
 }

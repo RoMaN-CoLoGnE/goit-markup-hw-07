@@ -1,14 +1,13 @@
 // cards styles
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @include grid();
 }
 
-.cards__item {
-  display: flex;
-  flex-direction: column;
-}
+// .cards__item {
+//   @include flex-center($fd: column, $ai: null, $jc: null);
+//   display: flex;
+//   flex-direction: column;
+// }
 
 .cards__link {
   display: block;

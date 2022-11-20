@@ -18,12 +18,11 @@
 .subscribe__input {
   padding: 15px 16px;
   width: 358px;
-
   border: 1px solid $form-border-grey;
-  filter: drop-shadow(0px 4px 4px $shadow-grey);
   border-radius: 4px;
-  background-color: inherit;
+  filter: drop-shadow(0px 4px 4px $shadow-grey);
   color: $link-grey;
+  background-color: inherit;
 
   &::placeholder {
     font-size: 16px;

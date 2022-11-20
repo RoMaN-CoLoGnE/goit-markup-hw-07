@@ -6,10 +6,7 @@
 
   &__container {
     @extend %container;
-
-    display: flex;
-    align-items: baseline;
-    gap: 70px;
+    @include flex-center($ai: baseline, $indent: 70px);
   }
 
   &__logo {
@@ -22,9 +19,7 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
+    @include flex-center($fd: column, $ai: null, $jc: null, $indent: 9px);
   }
 
   &__socials {

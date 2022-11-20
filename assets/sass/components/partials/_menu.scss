@@ -7,9 +7,7 @@
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    @include flex-center($jc: null, $indent: 50px);
   }
 
   &__item {

@@ -1,5 +1,7 @@
 // site logo styles
 .logo {
+  display: block;
+  padding: 20px 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -8,11 +10,11 @@
   text-decoration: none;
   color: $basic-blue;
 
-  &__part--dark {
+  &__tail-dark {
     color: $deep-black;
   }
 
-  &__part--light {
+  &__tail-light {
     color: $basic-white;
   }
 }

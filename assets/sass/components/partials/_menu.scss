@@ -1,10 +1,6 @@
 // menu styles
 .menu {
-  @include flex-center($jc: space-between);
-
-  &__logo {
-    margin-right: 90px;
-  }
+  @include flex-center($indent: 90px);
 
   &__list {
     @include flex-center($jc: null, $indent: 50px);

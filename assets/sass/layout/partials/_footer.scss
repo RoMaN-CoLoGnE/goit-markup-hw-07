@@ -6,12 +6,7 @@
 
   &__container {
     @extend %container;
-    @include flex-center($ai: baseline, $indent: 70px);
-  }
-
-  &__logo {
-    display: block;
-    margin-bottom: 20px;
+    @include flex-center($ai: baseline, $indent: 93px);
   }
 
   &__address {
@@ -20,10 +15,6 @@
 
   &__list {
     @include flex-center($fd: column, $ai: null, $jc: null, $indent: 9px);
-  }
-
-  &__socials {
-    margin-right: auto;
   }
 
   &__appeal {

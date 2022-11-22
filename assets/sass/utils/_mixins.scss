@@ -23,6 +23,29 @@
   justify-content: $jc;
   gap: $indent;
 }
+// todo =========???=========
+// flex mixin with @if
+// @mixin flex($dsp: flex, $fd: false, $ai: center, $jc: center, $indent: false) {
+//   @if $dsp {
+//     display: $dsp;
+//   }
+
+//   @if $fd {
+//     flex-direction: $fd;
+//   }
+
+//   @if $ai {
+//     align-items: $ai;
+//   }
+
+//   @if $jc {
+//     justify-content: $jc;
+//   }
+
+//   @if $indent {
+//     gap: $indent;
+//   }
+// }
 
 // grid mixin
 @mixin grid($indent: 30px) {
@@ -58,7 +81,7 @@
     left: $left;
   }
 }
-
+// todo =========???=========
 // fonts styles mixin
 // @mixin fonts($family: false, $fw: false, $fs: false, $lh: false, $ls: 0.03em, $cl: false) {
 //   @if $family {

@@ -10,6 +10,12 @@
   text-decoration: none;
   color: $basic-blue;
 
+  animation-name: logo-font-weight;
+  animation-delay: 500ms;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+
   &__tail-dark {
     color: $deep-black;
   }

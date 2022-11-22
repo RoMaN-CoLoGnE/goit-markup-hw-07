@@ -8,6 +8,8 @@
 
   &__item {
     position: relative;
+
+    animation: menu-items-slide-right 1000ms ease-out 2500ms backwards;
   }
 }
 
@@ -29,9 +31,7 @@
   }
 
   &--current::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    @include position-absolute($bot: 0, $left: 0);
 
     content: '';
     display: block;
@@ -39,5 +39,7 @@
     height: 4px;
     background-color: $basic-blue;
     border-radius: 2px;
+
+    animation: link-current-emersion 1000ms ease-in-out 3500ms backwards;
   }
 }

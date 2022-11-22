@@ -3,12 +3,6 @@
   @include grid();
 }
 
-// .cards__item {
-//   @include flex-center($fd: column, $ai: null, $jc: null);
-//   display: flex;
-//   flex-direction: column;
-// }
-
 .cards__link {
   display: block;
 
@@ -40,7 +34,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
+  letter-spacing: normal;
   color: $basic-black;
 }
 

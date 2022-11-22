@@ -62,9 +62,8 @@
 }
 
 .feedback__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
+  @include position-absolute($top: 50%, $left: 12px);
+
   width: 18px;
   height: 18px;
 
@@ -80,9 +79,8 @@
 }
 
 .feedback__icon-alert {
-  position: absolute;
-  top: 50%;
-  right: 12px;
+  @include position-absolute($top: 50%, $right: 12px);
+
   width: 18px;
   height: 18px;
   transform: translateY(-50%);

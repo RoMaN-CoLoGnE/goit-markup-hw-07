@@ -49,11 +49,12 @@
   border-radius: 4px;
 
   font-weight: 500;
+  font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   text-align: center;
 
-  color: $basic-black;
+  // color: $basic-black;
   background-color: $secondary-grey;
   box-shadow: none;
   cursor: pointer;
@@ -72,10 +73,7 @@
 
 .modal__close-button {
   @include flex-center();
-
-  position: absolute;
-  top: 8px;
-  right: 8px;
+  @include position-absolute($top: 8px, $right: 8px);
 
   padding: 0;
   width: 30px;

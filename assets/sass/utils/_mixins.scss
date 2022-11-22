@@ -35,3 +35,53 @@
 @mixin grid-item($items: 1, $indent: 30px) {
   flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 }
+
+// position absolute mixin
+@mixin position-absolute($pos: absolute, $top: false, $right: false, $bot: false, $left: false) {
+  @if $pos {
+    position: $pos;
+  }
+
+  @if $top {
+    top: $top;
+  }
+
+  @if $right {
+    right: $right;
+  }
+
+  @if $bot {
+    bottom: $bot;
+  }
+
+  @if $left {
+    left: $left;
+  }
+}
+
+// fonts styles mixin
+// @mixin fonts($family: false, $fw: false, $fs: false, $lh: false, $ls: 0.03em, $cl: false) {
+//   @if $family {
+//     font-family: $family, sans-serif;
+//   }
+
+//   @if $fw {
+//     font-weight: $fw;
+//   }
+
+//   @if $fs {
+//     font-size: $fs;
+//   }
+
+//   @if $lh {
+//     line-height: $lh / $fs;
+//   }
+
+//   @if $ls {
+//     letter-spacing: normal;
+//   }
+
+//   @if $cl {
+//     color: $cl;
+//   }
+// }
